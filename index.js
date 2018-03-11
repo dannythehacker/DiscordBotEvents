@@ -11,7 +11,7 @@ class DiscordBotEventEmitter extends EventEmitter {
         this.guild.client.on("message", function(message) {
             if(message.content && message.channel.id == message.channel.id && message.author && message.author.id != that.guild.client.user.id && message.author.bot){
                 try{
-                    let event = JSON.parse(Buffer.from(message.content, 'base64').toString('utf8'));
+                    let event = JSON.parse(message.content);
                     if(event.hasOwnProperty("name") && event.hasOwnProperty("arguments")){
                         that.emit(event.name,event.arguments);
                     }
@@ -23,10 +23,10 @@ class DiscordBotEventEmitter extends EventEmitter {
     }
     
     send(event, ...args){
-        var serializedEvent = Buffer.from(JSON.stringify({
+        var serializedEvent = JSON.stringify({
             name:event,
             arguments: args
-        })).toString('base64');
+        });
         if(serializedEvent.length < 2000)
             this.channel.send(serializedEvent).catch(console.error);
     }
