@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fr34kyn01535/DiscordBotEvents/issues"
   },
-  "homepage": "https://github.com/fr34kyn01535/DiscordBotEvents#readme"
+  "homepage": "https://github.com/fr34kyn01535/DiscordBotEvents#readme",
+  "dependencies": {
+    "Buffer": "0.0.0"
+  }
 }
