@@ -1,8 +1,8 @@
 {
-  "name": "discord-bot-events",
+  "name": "discordjs-bot-events",
   "version": "1.0.0",
   "description": "",
-  "main": "discord-bot-events.js",
+  "main": "discordjs-bot-events.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,7 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fr34kyn01535/DiscordBotEvents/issues"
-  },
+  }, 
   "homepage": "https://github.com/fr34kyn01535/DiscordBotEvents#readme",
   "dependencies": {
     "Buffer": "0.0.0"
