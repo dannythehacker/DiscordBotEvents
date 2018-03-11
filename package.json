@@ -1,8 +1,8 @@
 {
-  "name": "discordjs-bot-events",
+  "name": "discord.js-bot-events",
   "version": "1.0.0",
   "description": "",
-  "main": "discordjs-bot-events.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
