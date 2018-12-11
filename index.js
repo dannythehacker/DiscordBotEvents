@@ -6,7 +6,7 @@ class DiscordBotEventEmitter extends EventEmitter {
         super(); 
         var that = this;
         this.guild = guild;
-        this.channel = guild.channels.find('name',channelName ? channelName : 'bot-events');
+        this.channel = guild.channels.find((c) => c.name == channelName ? channelName : 'bot-events');
 
         this.guild.client.on("message", function(message) {
             if(message.content && message.channel.id == message.channel.id && message.author && message.author.id != that.guild.client.user.id && message.author.bot){
